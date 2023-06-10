@@ -2,17 +2,26 @@ import React from 'react';
 import './App.css';
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./components/home/Home";
-import Service from './components/services/Services';
 import Resume from './components/resume/Resume';
 import Portfolio from './components/portfolio/Portfolio';
-import Contact from './contact/Contact';
+import Contact from './components/contact/Contact';
+import About from './components/about/About';
 
 
 
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Sidebar />
+    <main className='main'>
+      <Home />
+      <About />
+      <Resume />
+      <Portfolio />
+      <Contact />
+    </main>
+    </>
   )
 }
 
