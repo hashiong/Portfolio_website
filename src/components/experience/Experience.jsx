@@ -4,12 +4,12 @@ import Data from "./Data";
 import Card from "./Card";
 
 
-const Resume = () => {
+const Experience = () => {
   return (
     <section className="experience container section" id="experience">
       <h2 className="section__title">Experience</h2>
 
-      <div className="resume__container grid">
+      <div className="experience__container grid">
         <div className="timeline grid">
           {Data.map((val, id) => {
             if (val.category === "education") {
@@ -46,4 +46,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Experience;
