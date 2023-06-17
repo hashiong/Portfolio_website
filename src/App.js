@@ -1,11 +1,8 @@
 import React from 'react';
 import './App.css';
-import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./components/home/Home";
-import Experience from './components/experience/Experience';
-import Portfolio from './components/portfolio/Portfolio';
-import Contact from './components/contact/Contact';
-import About from './components/about/About';
+import { BrowserRouter, Routes, Route, Switch} from "react-router-dom";
+import Mainpage from "./pages/home/Mainpage";
+import Projectpage from './pages/projects/Projectpage';
 
 
 
@@ -13,14 +10,14 @@ import About from './components/about/About';
 const App = () => {
   return (
     <>
-    <Sidebar />
-    <main className='main'>
-      <Home />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element = {<Mainpage />}/>
+        <Route path = "/projects" element = {<Projectpage />}/>
+      </Routes>
+
+    </BrowserRouter>
+
     </>
   )
 }
