@@ -18,7 +18,7 @@ const Projectpage = () => {
                         <span className="timeline__date">{val.year}</span>
                         <h3 className="timeline__title">{val.title}</h3>
                         <p className="timeline__text">{val.desc}</p>
-                        <img src={"http://localhost:3000/" + val.image} alt='None' width={500} height={500}/>
+                        <img src={val.image} alt='None' width={500} height={500}/>
                     </div>
                   );
                 
