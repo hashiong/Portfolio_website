@@ -1,6 +1,8 @@
 import React from "react";
 import "./about.css";
 import Image from "../../assets/avatar-2.svg";
+import Resume from "../../assets/my-resume.pdf";
+
 
 const About = () => {
   return (
@@ -15,7 +17,7 @@ const About = () => {
             <p className="about__description">
               I am Hongen Lei, a first year Computer Science Master Student at USC.
             </p>
-            <a href="" className="btn">
+            <a href={Resume} className="btn">
               Download CV
             </a>
           </div>
