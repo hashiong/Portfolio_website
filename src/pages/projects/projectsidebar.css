@@ -1,0 +1,8 @@
+.side__text{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.aside_without_border{
+  border-right: 0px;
+}

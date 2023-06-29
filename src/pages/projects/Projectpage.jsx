@@ -1,9 +1,12 @@
 import React from 'react'
 import Data from "./Data";
+import Projectsidebar from './Projectsidebar';
 
 
 const Projectpage = () => {
     return (
+      <>
+        <Projectsidebar/>
         <section className="container" id="projects">
           <h2 className="section__title">Projects</h2>
     
@@ -26,6 +29,7 @@ const Projectpage = () => {
             </div>
           </div>
         </section>
+        </>
       );
 }
 

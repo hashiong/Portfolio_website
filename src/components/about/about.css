@@ -64,29 +64,29 @@
     display: block;
   }
   
+  .pythonlevel {
+    width: 80%;
+    background-color: #FFD15C;
+  }
+
   .cpplevel {
     width: 75%;
-    background-color: rgb(255, 209, 92);
+    background-color: #FF4C60;
   }
   
   .javalevel {
     width: 70%;
-    background-color: rgb(255, 76, 96);
-  }
-  
-  .pythonlevel {
-    width: 80%;
-    background-color: rgb(108, 108, 299);
+    background-color: #44D7B6;
   }
 
   .htmllevel{
     width: 70%;
-    background-color: rgb(39, 239, 96);
+    background-color: #6C6CE5;
   }
 
   .jslevel{
     width: 65%;
-    background-color: rgb(255, 145, 76);
+    background-color: #FF7034;
   }
   
   .about__boxes {

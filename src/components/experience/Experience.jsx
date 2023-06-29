@@ -1,6 +1,7 @@
 import React from "react";
 import "./experience.css";
-import Data from "./Data";
+import EducationData from "./EducationData";
+import ProjectData from "./ProjectData";
 import Card from "./Card";
 
 
@@ -11,34 +12,36 @@ const Experience = () => {
 
       <div className="experience__container grid">
         <div className="timeline grid">
-          {Data.map((val, id) => {
-            if (val.category === "education") {
+          {EducationData.map((val, id) => {
               return (
                 <Card
                   key={id}
                   icon={val.icon}
                   title={val.title}
+                  category={val.category}
                   year={val.year}
-                  desc={val.desc}
+                  school={val.school}
+                  major={val.major}
+                  gpa={val.gpa}
+                  coursework={val.coursework}
                 />
               );
-            }
+            
           })}
         </div>
 
         <div className="timeline grid">
-          {Data.map((val, index) => {
-            if (val.category === "experience") {
+          {ProjectData.map((val, index) => {
               return (
                 <Card
                   key={index}
+                  category={val.category}
                   icon={val.icon}
                   title={val.title}
                   year={val.year}
                   desc={val.desc}
                 />
               );
-            }
           })}
         </div>
       </div>
