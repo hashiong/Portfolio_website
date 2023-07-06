@@ -6,16 +6,16 @@ import Work5 from "../../assets/work-5.svg";
 
 const Menu = [
   {
-    id: 1,
-    relativelink: "/projects/#1",
-    image: Work1,
+    id: 5,
+    relativelink: "/projects/#5",
+    image: Work2,
     title: "Business and Service Search Engine",
     category: "Fullstack",
   },
   {
-    id: 2,
-    relativelink: "/projects/#2",
-    image: Work2,
+    id: 4,
+    relativelink: "/projects/#4",
+    image: Work4,
     title: "Travel Adivce Website",
     category: "Fullstack",
   },
@@ -27,15 +27,15 @@ const Menu = [
     category: "Machine Learning",
   },
   {
-    id: 4,
-    relativelink: "/projects/#4",
-    image: Work4,
+    id: 2,
+    relativelink: "/projects/#2",
+    image: Work1,
     title: "Chat App",
     category: "Mobile",
   },
   {
-    id: 5,
-    relativelink: "/projects/#5",
+    id: 1,
+    relativelink: "/projects/#1",
     image: Work5,
     title: "Feblix Movie Web App",
     category: "Fullstack",
